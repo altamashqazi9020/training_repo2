@@ -8,7 +8,7 @@ class BistaTraining(models.Model):
      _description = 'bista_training.bista_training'
 
      name = fields.Char('Name', required=1 )
-     value = fields.Integer('Score')
+     value = fields.Integer('Score value')
      date = fields.Date('Date of Exam',required=1)
      trainee_ids = fields.One2many('bista.trainee','training_batch_id',strings="Trainee" )
 
